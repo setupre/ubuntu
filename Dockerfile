@@ -1,4 +1,4 @@
-FROM ubuntu:f1
+FROM ubuntu:trusty
 MAINTAINER setup1
 
 RUN apt-get update
