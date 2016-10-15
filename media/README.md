@@ -1,1 +1,1 @@
-this is media for store
+this is media folder
