@@ -4,6 +4,7 @@ MAINTAINER setup1
 RUN apt-get update
 RUN apt-get -y upgrade
 
+RUN apt-get install -y vim
 RUN apt-get install -y openssh-server
 RUN echo 'root:32886/rzw' |chpasswd
 RUN mkdir /var/run/sshd
