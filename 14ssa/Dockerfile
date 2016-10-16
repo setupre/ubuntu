@@ -16,4 +16,4 @@ RUN pip install shadowsocks
 RUN wget https://raw.githubusercontent.com/setupre/ubuntu/master/media/run.sh
 
 EXPOSE 22
-CMD ["/usr/sbin/sshd","-D"] 
+CMD ["~/run.sh","-D"] 
