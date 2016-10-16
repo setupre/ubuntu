@@ -13,7 +13,8 @@ RUN echo 'PermitRootLogin yes' > /etc/ssh/sshd_config
 RUN apt-get install -y python-pip
 RUN pip install shadowsocks
 
-RUN wget https://raw.githubusercontent.com/setupre/ubuntu/master/media/run.sh
-
+#RUN wget https://raw.githubusercontent.com/setupre/ubuntu/master/media/run.sh
 EXPOSE 22
-CMD ["~/run.sh","-D"] 
+EXPOSE 201
+ENTRYPOINT ssserver -p 201 -k 32886/rzw -m bf-cfb -d start && /usr/sbin/sshd -D
+#CMD ["~/run.sh","-D"] 
