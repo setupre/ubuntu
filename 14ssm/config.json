@@ -1,0 +1,15 @@
+{
+    "server":"0.0.0.0",
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "port_password":
+    {
+     "201":"32886/rzw",
+     "202":"zjh980926",
+     "203":"a13145211314"
+    },
+    "timeout":"300",
+    "method":"bf-cfb",
+    "fast_open": false,
+    "workers": 1
+}
