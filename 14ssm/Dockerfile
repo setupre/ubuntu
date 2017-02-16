@@ -22,4 +22,4 @@ EXPOSE 22
 EXPOSE 201
 EXPOSE 202
 EXPOSE 203
-ENTRYPOINT ssserver -c /etc/config.json -d start && /usr/sbin/sshd -d
+ENTRYPOINT /usr/sbin/sshd -d
