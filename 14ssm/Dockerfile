@@ -12,7 +12,8 @@ RUN echo 'PermitRootLogin yes' > /etc/ssh/sshd_config
 
 RUN apt-get install -y python-pip
 RUN pip install shadowsocks
-ADD config.json /etc/config.json
+RUN wget -P /etc https://raw.githubusercontent.com/setupre/ubuntu/master/14ssm/config.json
+#ADD config.json /etc/config.json
 
 #RUN wget https://raw.githubusercontent.com/setupre/ubuntu/master/media/run.sh
 
